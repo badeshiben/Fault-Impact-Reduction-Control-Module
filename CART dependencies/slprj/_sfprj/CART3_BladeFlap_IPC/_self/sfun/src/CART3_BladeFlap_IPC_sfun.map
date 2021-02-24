@@ -1,0 +1,599 @@
+ CART3_BladeFlap_IPC_sfun
+
+ Timestamp is 5a1533f3 (Wed Nov 22 16:23:15 2017)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000b8c4H .text                   CODE
+ 0002:00000000 00000214H .idata$5                DATA
+ 0002:00000214 00000004H .CRT$XCA                DATA
+ 0002:00000218 00000004H .CRT$XCZ                DATA
+ 0002:0000021c 00000004H .CRT$XIA                DATA
+ 0002:00000220 00000004H .CRT$XIAA               DATA
+ 0002:00000224 00000004H .CRT$XIC                DATA
+ 0002:00000228 00000004H .CRT$XIZ                DATA
+ 0002:00000230 000006e0H .rdata                  DATA
+ 0002:00000910 00000004H .rdata$sxdata           DATA
+ 0002:00000914 00000004H .rtc$IAA                DATA
+ 0002:00000918 00000004H .rtc$IZZ                DATA
+ 0002:0000091c 00000004H .rtc$TAA                DATA
+ 0002:00000920 00000004H .rtc$TZZ                DATA
+ 0002:00000928 00000064H .xdata$x                DATA
+ 0002:0000098c 00000078H .idata$2                DATA
+ 0002:00000a04 00000014H .idata$3                DATA
+ 0002:00000a18 00000214H .idata$4                DATA
+ 0002:00000c2c 00000b78H .idata$6                DATA
+ 0002:000017b0 0000005eH .edata                  DATA
+ 0003:00000000 00002c30H .data                   DATA
+ 0003:00002c30 00000448H .bss                    DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       __except_list              00000000     <absolute>
+ 0000:00000001       ___safe_se_handler_count   00000001     <absolute>
+ 0000:00009876       __fltused                  00009876     <absolute>
+ 0000:00009876       __ldused                   00009876     <absolute>
+ 0000:00000000       ___ImageBase               10000000     <linker-defined>
+ 0001:00000000       _CART3_BladeFlap_IPC_initializer 10001000 f   CART3_BladeFlap_IPC_sfun.obj
+ 0001:00000010       _CART3_BladeFlap_IPC_terminator 10001010 f   CART3_BladeFlap_IPC_sfun.obj
+ 0001:00000020       _sf_CART3_BladeFlap_IPC_method_dispatcher 10001020 f   CART3_BladeFlap_IPC_sfun.obj
+ 0001:00000070       _sf_CART3_BladeFlap_IPC_process_check_sum_call 10001070 f   CART3_BladeFlap_IPC_sfun.obj
+ 0001:00000430       _sf_CART3_BladeFlap_IPC_autoinheritance_info 10001430 f   CART3_BladeFlap_IPC_sfun.obj
+ 0001:00000590       _sf_CART3_BladeFlap_IPC_get_eml_resolved_functions_info 10001590 f   CART3_BladeFlap_IPC_sfun.obj
+ 0001:000006b0       _sf_CART3_BladeFlap_IPC_third_party_uses_info 100016b0 f   CART3_BladeFlap_IPC_sfun.obj
+ 0001:00000810       _sf_CART3_BladeFlap_IPC_updateBuildInfo_args_info 10001810 f   CART3_BladeFlap_IPC_sfun.obj
+ 0001:00000970       _CART3_BladeFlap_IPC_debug_initialize 10001970 f   CART3_BladeFlap_IPC_sfun.obj
+ 0001:000009d0       _CART3_BladeFlap_IPC_register_exported_symbols 100019d0 f   CART3_BladeFlap_IPC_sfun.obj
+ 0001:000009e0       _load_CART3_BladeFlap_IPC_optimization_info 100019e0 f   CART3_BladeFlap_IPC_sfun.obj
+ 0001:00000a20       _unload_CART3_BladeFlap_IPC_optimization_info 10001a20 f   CART3_BladeFlap_IPC_sfun.obj
+ 0001:00000a50       _sf_c1_CART3_BladeFlap_IPC_get_eml_resolved_functions_info 10001a50 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:000018a0       _sf_c1_CART3_BladeFlap_IPC_get_check_sum 100028a0 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:00001900       _sf_c1_CART3_BladeFlap_IPC_get_autoinheritance_info 10002900 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:00001d00       _sf_c1_CART3_BladeFlap_IPC_third_party_uses_info 10002d00 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:00001d20       _sf_c1_CART3_BladeFlap_IPC_updateBuildInfo_args_info 10002d20 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:00001d40       _sf_internal_get_sim_state_c1_CART3_BladeFlap_IPC 10002d40 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:00001fe0       _sf_internal_set_sim_state_c1_CART3_BladeFlap_IPC 10002fe0 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:000022d0       _c1_CART3_BladeFlap_IPC_method_dispatcher 100032d0 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:000036f0       _sf_c2_CART3_BladeFlap_IPC_get_eml_resolved_functions_info 100046f0 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:00004540       _sf_c2_CART3_BladeFlap_IPC_get_check_sum 10005540 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:000045a0       _sf_c2_CART3_BladeFlap_IPC_get_autoinheritance_info 100055a0 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:000048b0       _sf_c2_CART3_BladeFlap_IPC_third_party_uses_info 100058b0 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:000048d0       _sf_c2_CART3_BladeFlap_IPC_updateBuildInfo_args_info 100058d0 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:000048f0       _sf_internal_get_sim_state_c2_CART3_BladeFlap_IPC 100058f0 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:00004b90       _sf_internal_set_sim_state_c2_CART3_BladeFlap_IPC 10005b90 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:00004e80       _c2_CART3_BladeFlap_IPC_method_dispatcher 10005e80 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:000060e0       _sf_process_check_sum_call 100070e0 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00006110       _sf_process_autoinheritance_call 10007110 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00006250       _sf_process_get_third_party_uses_info_call 10007250 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00006390       _sf_process_get_updateBuildInfo_args_info_call 10007390 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:000064d0       _sf_process_get_eml_resolved_functions_info_call 100074d0 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:000065f0       _sf_mex_unlock_call        100075f0 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00006680       _sf_machine_global_initializer_called 10007680 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:000066a0       _sf_machine_global_method_dispatcher 100076a0 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:000066e0       _sf_machine_global_terminator 100076e0 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00006720       _sf_register_machine_exported_symbols 10007720 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00006740       _callCustomFcn             10007740 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00006750       _sf_machine_global_initializer 10007750 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:000067c0       _mdlGetSimState            100077c0 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00006820       _mdlSetSimState            10007820 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00006850       __ssSetStateAbsTol         10007850 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:000068f0       __ssGetAbsTol              100078f0 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00006940       __ssSetInputPortMatrixDimensions 10007940 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:000069f0       __ssSetOutputPortMatrixDimensions 100079f0 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00006aa0       __ssSetInputPortVectorDimension 10007aa0 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00006b20       __ssSetOutputPortVectorDimension 10007b20 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00006ba0       _ssIsRunTimeParamTunable   10007ba0 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00006c00       _ssGetSFuncBlockHandle     10007c00 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00006c50       __ssGetCurrentInputPortWidth 10007c50 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00006d20       __ssGetCurrentOutputPortWidth 10007d20 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00006df0       __ssGetCallSystemNumFcnCallDestinations 10007df0 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00006e50       _ssWarning                 10007e50 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00006f30       _ssGetIsZeroCrossControlDisabled 10007f30 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00006f90       _ssSetIsInputPortUsedForContZcSignal 10007f90 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00006fe0       _ssSetZcSignalIsZcElementDisc 10007fe0 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00007060       _ssSetZcSignalName         10008060 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:000070b0       _ssSetZcSignalWidth        100080b0 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00007100       _ssSetZcSignalZcEventType  10008100 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00007150       _ssSetZcSignalType         10008150 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:000071a0       _ssSetZcSignalZcTol        100081a0 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:000071f0       _ssSetZcSignalNeedsEventNotification 100081f0 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00007240       _ssCreateAndAddZcSignalInfo 10008240 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:000072a0       _ssCloneAndAddZcSignalInfo 100082a0 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00007300       _ssGetNumZcSignals         10008300 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00007360       _ssGetZcSignalVector       10008360 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:000073c0       _ssGetZcSignalZcEvents     100083c0 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00007420       _ssGetZcSignalName         10008420 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00007480       _ssGetZcSignalWidth        10008480 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:000074e0       _ssGetZcSignalZcEventType  100084e0 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00007540       _ssGetZcSignalType         10008540 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:000075a0       _ssGetZcSignalZcTol        100085a0 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00007600       _ssGetZcSignalNeedsEventNotification 10008600 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00007660       _ssGetZcSignalIsZcElementDisc 10008660 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:000076e0       _ssGetIsInputPortElementContinuous 100086e0 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00007760       __ssGetInputPortSignalPtrsFcn 10008760 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00007960       __ssGetInputPortSignalFcn  10008960 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00007af0       __ssSetInputPortDirectFeedThroughFcn 10008af0 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00007c20       __ssSetInputPortReusableFcn 10008c20 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00007cb0       __ssSetOutputPortReusableFcn 10008cb0 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00007d40       _ssGetDTypeIdFromMxArray   10008d40 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00007e30       _ssWriteRTWStr             10008e30 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00007e70       _ssWriteRTWMxVectParam     10008e70 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00007eb0       _ssWriteRTWMx2dMatParam    10008eb0 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00007ef0       _ssWriteRTWNameValuePair   10008ef0 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00008260       _ssWriteRTWParameters      10009260 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00008600       _ssWriteRTWParamSettings   10009600 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00008ab0       _ssWriteRTWWorkVect        10009ab0 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00008e40       _mexFunction               10009e40 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:0000ab90       _ProcessMexSfunctionEveryCall 1000bb90 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:0000acae       _sf_debug_set_machine_data_thresholds 1000bcae f   sf_runtime:sf_runtime.dll
+ 0001:0000acb4       _sf_debug_set_machine_event_thresholds 1000bcb4 f   sf_runtime:sf_runtime.dll
+ 0001:0000acba       _sf_debug_initialize_machine 1000bcba f   sf_runtime:sf_runtime.dll
+ 0001:0000acc0       _sf_load_rtw_optimization_info 1000bcc0 f   sf_runtime:sf_runtime.dll
+ 0001:0000acc6       _sf_mex_emlrtNameCapturePostProcessR2012a 1000bcc6 f   sf_runtime:sf_runtime.dll
+ 0001:0000accc       _sf_mex_assign             1000bccc f   sf_runtime:sf_runtime.dll
+ 0001:0000acd2       _sf_mex_createstruct       1000bcd2 f   sf_runtime:sf_runtime.dll
+ 0001:0000acd8       _sf_mex_destroy            1000bcd8 f   sf_runtime:sf_runtime.dll
+ 0001:0000acde       _sf_mex_duplicatearraysafe 1000bcde f   sf_runtime:sf_runtime.dll
+ 0001:0000ace4       _sf_mex_createcellmatrix   1000bce4 f   sf_runtime:sf_runtime.dll
+ 0001:0000acea       _sf_mex_addfield           1000bcea f   sf_runtime:sf_runtime.dll
+ 0001:0000acf0       _sf_mex_create             1000bcf0 f   sf_runtime:sf_runtime.dll
+ 0001:0000acf6       _sf_mex_error_message      1000bcf6 f   sf_runtime:sf_runtime.dll
+ 0001:0000acfc       _sf_mex_call_matlab        1000bcfc f   sf_runtime:sf_runtime.dll
+ 0001:0000ad02       _sf_mex_setcell            1000bd02 f   sf_runtime:sf_runtime.dll
+ 0001:0000ad08       _sf_mex_decode_encoded_mx_struct_array 1000bd08 f   sf_runtime:sf_runtime.dll
+ 0001:0000ad0e       _sf_mex_getcell            1000bd0e f   sf_runtime:sf_runtime.dll
+ 0001:0000ad14       _sf_mex_dup                1000bd14 f   sf_runtime:sf_runtime.dll
+ 0001:0000ad1a       _sf_mex_import             1000bd1a f   sf_runtime:sf_runtime.dll
+ 0001:0000ad20       _sf_set_rtw_dwork_info     1000bd20 f   sf_runtime:sf_runtime.dll
+ 0001:0000ad26       _sf_mark_chart_reusable_outputs 1000bd26 f   sf_runtime:sf_runtime.dll
+ 0001:0000ad2c       _sf_mark_chart_expressionable_inputs 1000bd2c f   sf_runtime:sf_runtime.dll
+ 0001:0000ad32       _sf_update_buildInfo       1000bd32 f   sf_runtime:sf_runtime.dll
+ 0001:0000ad38       _sf_rtw_info_uint_prop     1000bd38 f   sf_runtime:sf_runtime.dll
+ 0001:0000ad3e       _sf_is_chart_inlinable     1000bd3e f   sf_runtime:sf_runtime.dll
+ 0001:0000ad44       _sim_mode_is_external      1000bd44 f   sf_runtime:sf_runtime.dll
+ 0001:0000ad4a       _sim_mode_is_rtw_gen       1000bd4a f   sf_runtime:sf_runtime.dll
+ 0001:0000ad50       _sf_debug_reset_current_state_configuration 1000bd50 f   sf_runtime:sf_runtime.dll
+ 0001:0000ad56       _sf_debug_set_instance_data_value_ptr 1000bd56 f   sf_runtime:sf_runtime.dll
+ 0001:0000ad5c       _sf_debug_set_chart_data_compiled_props 1000bd5c f   sf_runtime:sf_runtime.dll
+ 0001:0000ad62       _cv_eml_init_if            1000bd62 f   sf_runtime:sf_runtime.dll
+ 0001:0000ad68       _cv_eml_init_fcn           1000bd68 f   sf_runtime:sf_runtime.dll
+ 0001:0000ad6e       _cv_eml_init_script        1000bd6e f   sf_runtime:sf_runtime.dll
+ 0001:0000ad74       _sf_debug_cv_init_trans    1000bd74 f   sf_runtime:sf_runtime.dll
+ 0001:0000ad7a       _sf_debug_cv_init_state    1000bd7a f   sf_runtime:sf_runtime.dll
+ 0001:0000ad80       _sf_debug_cv_init_chart    1000bd80 f   sf_runtime:sf_runtime.dll
+ 0001:0000ad86       _sf_debug_set_chart_decomposition 1000bd86 f   sf_runtime:sf_runtime.dll
+ 0001:0000ad8c       _sf_debug_set_chart_substate_count 1000bd8c f   sf_runtime:sf_runtime.dll
+ 0001:0000ad92       _sf_debug_set_chart_state_info 1000bd92 f   sf_runtime:sf_runtime.dll
+ 0001:0000ad98       _sf_debug_set_chart_data_props 1000bd98 f   sf_runtime:sf_runtime.dll
+ 0001:0000ad9e       _sf_debug_set_chart_event_thresholds 1000bd9e f   sf_runtime:sf_runtime.dll
+ 0001:0000ada4       _sf_debug_set_chart_disable_implicit_casting 1000bda4 f   sf_runtime:sf_runtime.dll
+ 0001:0000adaa       _sf_debug_initialize_chart 1000bdaa f   sf_runtime:sf_runtime.dll
+ 0001:0000adb0       _sf_get_time               1000bdb0 f   sf_runtime:sf_runtime.dll
+ 0001:0000adb6       _sf_debug_check_for_state_inconsistency 1000bdb6 f   sf_runtime:sf_runtime.dll
+ 0001:0000adbc       _sf_debug_symbol_scope_pop 1000bdbc f   sf_runtime:sf_runtime.dll
+ 0001:0000adc2       _eml_debug_line_call       1000bdc2 f   sf_runtime:sf_runtime.dll
+ 0001:0000adc8       _cv_eml_eval               1000bdc8 f   sf_runtime:sf_runtime.dll
+ 0001:0000adce       _sf_debug_symbol_scope_add_eml 1000bdce f   sf_runtime:sf_runtime.dll
+ 0001:0000add4       _sf_debug_symbol_scope_add_eml_importable 1000bdd4 f   sf_runtime:sf_runtime.dll
+ 0001:0000adda       _sf_debug_symbol_scope_push_eml 1000bdda f   sf_runtime:sf_runtime.dll
+ 0001:0000ade0       _sf_debug_data_range_wrapper 1000bde0 f   sf_runtime:sf_runtime.dll
+ 0001:0000ade6       _sf_debug_call             1000bde6 f   sf_runtime:sf_runtime.dll
+ 0001:0000adec       _sf_debug_symbol_scope_push 1000bdec f   sf_runtime:sf_runtime.dll
+ 0001:0000adf2       _sf_clear_rtw_identifier   1000bdf2 f   sf_runtime:sf_runtime.dll
+ 0001:0000adf8       _sf_debug_terminate        1000bdf8 f   sf_runtime:sf_runtime.dll
+ 0001:0000adfe       _sf_debug_create_debug_instance_struct 1000bdfe f   sf_runtime:sf_runtime.dll
+ 0001:0000ae04       _sf_debug_api              1000be04 f   sf_runtime:sf_runtime.dll
+ 0001:0000ae0a       _callMdlMethodAndReportError 1000be0a f   sf_runtime:sf_runtime.dll
+ 0001:0000ae10       _call_sf_machine_global_method_dispatcher 1000be10 f   sf_runtime:sf_runtime.dll
+ 0001:0000ae16       _sf_clear_error_manager_info 1000be16 f   sf_runtime:sf_runtime.dll
+ 0001:0000ae1c       _sf_mex_error_direct_call  1000be1c f   sf_runtime:sf_runtime.dll
+ 0001:0000ae22       _mxGetScalar               1000be22 f   libmx:libmx.dll
+ 0001:0000ae28       _mxGetPr                   1000be28 f   libmx:libmx.dll
+ 0001:0000ae2e       _mxCreateDoubleMatrix_730  1000be2e f   libmx:libmx.dll
+ 0001:0000ae34       _mxGetString_730           1000be34 f   libmx:libmx.dll
+ 0001:0000ae3a       _mxIsChar                  1000be3a f   libmx:libmx.dll
+ 0001:0000ae40       _mxDestroyArray            1000be40 f   libmx:libmx.dll
+ 0001:0000ae46       _mxDuplicateArray          1000be46 f   libmx:libmx.dll
+ 0001:0000ae4c       _mxCreateDoubleScalar      1000be4c f   libmx:libmx.dll
+ 0001:0000ae52       _mxSetField_730            1000be52 f   libmx:libmx.dll
+ 0001:0000ae58       _mxCreateString            1000be58 f   libmx:libmx.dll
+ 0001:0000ae5e       _mxCreateStructMatrix_730  1000be5e f   libmx:libmx.dll
+ 0001:0000ae64       _mxCreateCellMatrix_730    1000be64 f   libmx:libmx.dll
+ 0001:0000ae6a       _mxGetClassID              1000be6a f   libmx:libmx.dll
+ 0001:0000ae70       _mxIsNumeric               1000be70 f   libmx:libmx.dll
+ 0001:0000ae76       _mxIsComplex               1000be76 f   libmx:libmx.dll
+ 0001:0000ae7c       _mxGetN                    1000be7c f   libmx:libmx.dll
+ 0001:0000ae82       _mxGetM                    1000be82 f   libmx:libmx.dll
+ 0001:0000ae88       _mxCalloc                  1000be88 f   libmx:libmx.dll
+ 0001:0000ae8e       _mexMakeArrayPersistent    1000be8e f   libmex:libmex.dll
+ 0001:0000ae94       _mexUnlock                 1000be94 f   libmex:libmex.dll
+ 0001:0000ae9a       _mexIsLocked               1000be9a f   libmex:libmex.dll
+ 0001:0000aea0       _mexWarnMsgTxt             1000bea0 f   libmex:libmex.dll
+ 0001:0000aea6       _mexCallMATLAB             1000bea6 f   libmex:libmex.dll
+ 0001:0000aeac       _mexErrMsgTxt              1000beac f   libmex:libmex.dll
+ 0001:0000aeb2       _mexLock                   1000beb2 f   libmex:libmex.dll
+ 0001:0000aeb8       _utMalloc                  1000beb8 f   libut:libut.dll
+ 0001:0000aebe       _utFree                    1000bebe f   libut:libut.dll
+ 0001:0000aec4       _strcmp                    1000bec4 f   MSVCRT:MSVCR100.dll
+ 0001:0000aed0       @__security_check_cookie@4 1000bed0 f   MSVCRT:secchk.obj
+ 0001:0000aee0       _strlen                    1000bee0 f   MSVCRT:MSVCR100.dll
+ 0001:0000aee6       _memset                    1000bee6 f   MSVCRT:MSVCR100.dll
+ 0001:0000aeec       _free                      1000beec f   MSVCRT:MSVCR100.dll
+ 0001:0000aef2       _sprintf                   1000bef2 f   MSVCRT:MSVCR100.dll
+ 0001:0000aef8       _malloc                    1000bef8 f   MSVCRT:MSVCR100.dll
+ 0001:0000aefe       _strcat                    1000befe f   MSVCRT:MSVCR100.dll
+ 0001:0000af10       __ftol2_sse                1000bf10 f   MSVCRT:ftol2.obj
+ 0001:0000af19       __ftol2_pentium4           1000bf19 f   MSVCRT:ftol2.obj
+ 0001:0000af2c       __ftol2_sse_excpt          1000bf2c f   MSVCRT:ftol2.obj
+ 0001:0000af46       __ftol2                    1000bf46 f   MSVCRT:ftol2.obj
+ 0001:0000afbc       _memcpy                    1000bfbc f   MSVCRT:MSVCR100.dll
+ 0001:0000afc2       _NtCurrentTeb              1000bfc2 f i MSVCRT:crtdll.obj
+ 0001:0000b01a       __CRT_INIT@12              1000c01a f   MSVCRT:crtdll.obj
+ 0001:0000b33a       __DllMainCRTStartup@12     1000c33a f   MSVCRT:crtdll.obj
+ 0001:0000b35d       ___report_gsfailure        1000c35d f   MSVCRT:gs_report.obj
+ 0001:0000b463       ___sse2_available_init     1000c463 f   MSVCRT:cpu_disp.obj
+ 0001:0000b473       ___clean_type_info_names   1000c473 f   MSVCRT:tncleanup.obj
+ 0001:0000b47f       __onexit                   1000c47f f   MSVCRT:atonexit.obj
+ 0001:0000b520       _atexit                    1000c520 f   MSVCRT:atonexit.obj
+ 0001:0000b537       __RTC_Initialize           1000c537 f   MSVCRT:_initsect_.obj
+ 0001:0000b55d       __RTC_Terminate            1000c55d f   MSVCRT:_initsect_.obj
+ 0001:0000b584       __malloc_crt               1000c584 f   MSVCRT:MSVCR100.dll
+ 0001:0000b58a       __encoded_null             1000c58a f   MSVCRT:MSVCR100.dll
+ 0001:0000b590       __ValidateImageBase        1000c590 f   MSVCRT:pesect.obj
+ 0001:0000b5d0       __FindPESection            1000c5d0 f   MSVCRT:pesect.obj
+ 0001:0000b620       __IsNonwritableInCurrentImage 1000c620 f   MSVCRT:pesect.obj
+ 0001:0000b6dc       __initterm                 1000c6dc f   MSVCRT:MSVCR100.dll
+ 0001:0000b6e2       __initterm_e               1000c6e2 f   MSVCRT:MSVCR100.dll
+ 0001:0000b6e8       __amsg_exit                1000c6e8 f   MSVCRT:MSVCR100.dll
+ 0001:0000b6ee       ___CppXcptFilter           1000c6ee f   MSVCRT:MSVCR100.dll
+ 0001:0000b6f4       _DllMain@12                1000c6f4 f   MSVCRT:dllmain.obj
+ 0001:0000b720       __SEH_prolog4              1000c720 f   MSVCRT:sehprolg4.obj
+ 0001:0000b765       __SEH_epilog4              1000c765 f   MSVCRT:sehprolg4.obj
+ 0001:0000b779       __except_handler4          1000c779 f   MSVCRT:chandler4gs.obj
+ 0001:0000b79e       ___security_init_cookie    1000c79e f   MSVCRT:gs_support.obj
+ 0001:0000b83a       __crt_debugger_hook        1000c83a f   MSVCRT:MSVCR100.dll
+ 0001:0000b840       ___clean_type_info_names_internal 1000c840 f   MSVCRT:MSVCR100.dll
+ 0001:0000b846       __unlock                   1000c846 f   MSVCRT:MSVCR100.dll
+ 0001:0000b84c       ___dllonexit               1000c84c f   MSVCRT:MSVCR100.dll
+ 0001:0000b852       __lock                     1000c852 f   MSVCRT:MSVCR100.dll
+ 0001:0000b858       __except_handler4_common   1000c858 f   MSVCRT:MSVCR100.dll
+ 0001:0000b85e       _EncodePointer@4           1000c85e f   kernel32:KERNEL32.dll
+ 0001:0000b864       _DecodePointer@4           1000c864 f   kernel32:KERNEL32.dll
+ 0001:0000b86a       _InterlockedExchange@8     1000c86a f   kernel32:KERNEL32.dll
+ 0001:0000b870       _Sleep@4                   1000c870 f   kernel32:KERNEL32.dll
+ 0001:0000b876       _InterlockedCompareExchange@12 1000c876 f   kernel32:KERNEL32.dll
+ 0001:0000b87c       _TerminateProcess@8        1000c87c f   kernel32:KERNEL32.dll
+ 0001:0000b882       _GetCurrentProcess@0       1000c882 f   kernel32:KERNEL32.dll
+ 0001:0000b888       _UnhandledExceptionFilter@4 1000c888 f   kernel32:KERNEL32.dll
+ 0001:0000b88e       _SetUnhandledExceptionFilter@4 1000c88e f   kernel32:KERNEL32.dll
+ 0001:0000b894       _IsDebuggerPresent@0       1000c894 f   kernel32:KERNEL32.dll
+ 0001:0000b89a       _IsProcessorFeaturePresent@4 1000c89a f   kernel32:KERNEL32.dll
+ 0001:0000b8a0       _DisableThreadLibraryCalls@4 1000c8a0 f   kernel32:KERNEL32.dll
+ 0001:0000b8a6       _QueryPerformanceCounter@4 1000c8a6 f   kernel32:KERNEL32.dll
+ 0001:0000b8ac       _GetTickCount@0            1000c8ac f   kernel32:KERNEL32.dll
+ 0001:0000b8b2       _GetCurrentThreadId@0      1000c8b2 f   kernel32:KERNEL32.dll
+ 0001:0000b8b8       _GetCurrentProcessId@0     1000c8b8 f   kernel32:KERNEL32.dll
+ 0001:0000b8be       _GetSystemTimeAsFileTime@4 1000c8be f   kernel32:KERNEL32.dll
+ 0002:00000000       __imp__GetSystemTimeAsFileTime@4 1000d000     kernel32:KERNEL32.dll
+ 0002:00000004       __imp__GetCurrentProcessId@0 1000d004     kernel32:KERNEL32.dll
+ 0002:00000008       __imp__GetCurrentThreadId@0 1000d008     kernel32:KERNEL32.dll
+ 0002:0000000c       __imp__GetTickCount@0      1000d00c     kernel32:KERNEL32.dll
+ 0002:00000010       __imp__QueryPerformanceCounter@4 1000d010     kernel32:KERNEL32.dll
+ 0002:00000014       __imp__DisableThreadLibraryCalls@4 1000d014     kernel32:KERNEL32.dll
+ 0002:00000018       __imp__IsProcessorFeaturePresent@4 1000d018     kernel32:KERNEL32.dll
+ 0002:0000001c       __imp__IsDebuggerPresent@0 1000d01c     kernel32:KERNEL32.dll
+ 0002:00000020       __imp__SetUnhandledExceptionFilter@4 1000d020     kernel32:KERNEL32.dll
+ 0002:00000024       __imp__UnhandledExceptionFilter@4 1000d024     kernel32:KERNEL32.dll
+ 0002:00000028       __imp__GetCurrentProcess@0 1000d028     kernel32:KERNEL32.dll
+ 0002:0000002c       __imp__TerminateProcess@8  1000d02c     kernel32:KERNEL32.dll
+ 0002:00000030       __imp__InterlockedCompareExchange@12 1000d030     kernel32:KERNEL32.dll
+ 0002:00000034       __imp__Sleep@4             1000d034     kernel32:KERNEL32.dll
+ 0002:00000038       __imp__InterlockedExchange@8 1000d038     kernel32:KERNEL32.dll
+ 0002:0000003c       __imp__DecodePointer@4     1000d03c     kernel32:KERNEL32.dll
+ 0002:00000040       __imp__EncodePointer@4     1000d040     kernel32:KERNEL32.dll
+ 0002:00000044       \177KERNEL32_NULL_THUNK_DATA 1000d044     kernel32:KERNEL32.dll
+ 0002:00000048       __imp___except_handler4_common 1000d048     MSVCRT:MSVCR100.dll
+ 0002:0000004c       __imp___onexit             1000d04c     MSVCRT:MSVCR100.dll
+ 0002:00000050       __imp___lock               1000d050     MSVCRT:MSVCR100.dll
+ 0002:00000054       __imp____dllonexit         1000d054     MSVCRT:MSVCR100.dll
+ 0002:00000058       __imp___unlock             1000d058     MSVCRT:MSVCR100.dll
+ 0002:0000005c       __imp____clean_type_info_names_internal 1000d05c     MSVCRT:MSVCR100.dll
+ 0002:00000060       __imp___crt_debugger_hook  1000d060     MSVCRT:MSVCR100.dll
+ 0002:00000064       __imp____CppXcptFilter     1000d064     MSVCRT:MSVCR100.dll
+ 0002:00000068       __imp___amsg_exit          1000d068     MSVCRT:MSVCR100.dll
+ 0002:0000006c       __imp___initterm_e         1000d06c     MSVCRT:MSVCR100.dll
+ 0002:00000070       __imp___initterm           1000d070     MSVCRT:MSVCR100.dll
+ 0002:00000074       __imp___encoded_null       1000d074     MSVCRT:MSVCR100.dll
+ 0002:00000078       __imp___malloc_crt         1000d078     MSVCRT:MSVCR100.dll
+ 0002:0000007c       __imp__memcpy              1000d07c     MSVCRT:MSVCR100.dll
+ 0002:00000080       __imp__strcat              1000d080     MSVCRT:MSVCR100.dll
+ 0002:00000084       __imp__malloc              1000d084     MSVCRT:MSVCR100.dll
+ 0002:00000088       __imp__sprintf             1000d088     MSVCRT:MSVCR100.dll
+ 0002:0000008c       __imp__free                1000d08c     MSVCRT:MSVCR100.dll
+ 0002:00000090       __imp__memset              1000d090     MSVCRT:MSVCR100.dll
+ 0002:00000094       __imp__strlen              1000d094     MSVCRT:MSVCR100.dll
+ 0002:00000098       __imp__strcmp              1000d098     MSVCRT:MSVCR100.dll
+ 0002:0000009c       \177MSVCR100_NULL_THUNK_DATA 1000d09c     MSVCRT:MSVCR100.dll
+ 0002:000000a0       __imp__mexLock             1000d0a0     libmex:libmex.dll
+ 0002:000000a4       __imp__mexErrMsgTxt        1000d0a4     libmex:libmex.dll
+ 0002:000000a8       __imp__mexCallMATLAB       1000d0a8     libmex:libmex.dll
+ 0002:000000ac       __imp__mexWarnMsgTxt       1000d0ac     libmex:libmex.dll
+ 0002:000000b0       __imp__mexIsLocked         1000d0b0     libmex:libmex.dll
+ 0002:000000b4       __imp__mexUnlock           1000d0b4     libmex:libmex.dll
+ 0002:000000b8       __imp__mexMakeArrayPersistent 1000d0b8     libmex:libmex.dll
+ 0002:000000bc       \177libmex_NULL_THUNK_DATA 1000d0bc     libmex:libmex.dll
+ 0002:000000c0       __imp__mxCalloc            1000d0c0     libmx:libmx.dll
+ 0002:000000c4       __imp__mxGetM              1000d0c4     libmx:libmx.dll
+ 0002:000000c8       __imp__mxGetN              1000d0c8     libmx:libmx.dll
+ 0002:000000cc       __imp__mxIsComplex         1000d0cc     libmx:libmx.dll
+ 0002:000000d0       __imp__mxIsNumeric         1000d0d0     libmx:libmx.dll
+ 0002:000000d4       __imp__mxGetClassID        1000d0d4     libmx:libmx.dll
+ 0002:000000d8       __imp__mxCreateCellMatrix_730 1000d0d8     libmx:libmx.dll
+ 0002:000000dc       __imp__mxCreateStructMatrix_730 1000d0dc     libmx:libmx.dll
+ 0002:000000e0       __imp__mxCreateString      1000d0e0     libmx:libmx.dll
+ 0002:000000e4       __imp__mxSetField_730      1000d0e4     libmx:libmx.dll
+ 0002:000000e8       __imp__mxCreateDoubleScalar 1000d0e8     libmx:libmx.dll
+ 0002:000000ec       __imp__mxDuplicateArray    1000d0ec     libmx:libmx.dll
+ 0002:000000f0       __imp__mxDestroyArray      1000d0f0     libmx:libmx.dll
+ 0002:000000f4       __imp__mxIsChar            1000d0f4     libmx:libmx.dll
+ 0002:000000f8       __imp__mxGetScalar         1000d0f8     libmx:libmx.dll
+ 0002:000000fc       __imp__mxGetPr             1000d0fc     libmx:libmx.dll
+ 0002:00000100       __imp__mxCreateDoubleMatrix_730 1000d100     libmx:libmx.dll
+ 0002:00000104       __imp__mxGetString_730     1000d104     libmx:libmx.dll
+ 0002:00000108       \177libmx_NULL_THUNK_DATA  1000d108     libmx:libmx.dll
+ 0002:0000010c       __imp__utMalloc            1000d10c     libut:libut.dll
+ 0002:00000110       __imp__utFree              1000d110     libut:libut.dll
+ 0002:00000114       \177libut_NULL_THUNK_DATA  1000d114     libut:libut.dll
+ 0002:00000118       __imp__call_sf_machine_global_method_dispatcher 1000d118     sf_runtime:sf_runtime.dll
+ 0002:0000011c       __imp__callMdlMethodAndReportError 1000d11c     sf_runtime:sf_runtime.dll
+ 0002:00000120       __imp__sf_debug_api        1000d120     sf_runtime:sf_runtime.dll
+ 0002:00000124       __imp__sf_debug_create_debug_instance_struct 1000d124     sf_runtime:sf_runtime.dll
+ 0002:00000128       __imp__sf_debug_terminate  1000d128     sf_runtime:sf_runtime.dll
+ 0002:0000012c       __imp__sf_clear_rtw_identifier 1000d12c     sf_runtime:sf_runtime.dll
+ 0002:00000130       __imp__sf_debug_symbol_scope_push 1000d130     sf_runtime:sf_runtime.dll
+ 0002:00000134       __imp__sf_debug_call       1000d134     sf_runtime:sf_runtime.dll
+ 0002:00000138       __imp__sf_debug_data_range_wrapper 1000d138     sf_runtime:sf_runtime.dll
+ 0002:0000013c       __imp__sf_clear_error_manager_info 1000d13c     sf_runtime:sf_runtime.dll
+ 0002:00000140       __imp__sf_debug_symbol_scope_add_eml_importable 1000d140     sf_runtime:sf_runtime.dll
+ 0002:00000144       __imp__sf_debug_symbol_scope_add_eml 1000d144     sf_runtime:sf_runtime.dll
+ 0002:00000148       __imp__cv_eml_eval         1000d148     sf_runtime:sf_runtime.dll
+ 0002:0000014c       __imp__eml_debug_line_call 1000d14c     sf_runtime:sf_runtime.dll
+ 0002:00000150       __imp__sf_debug_symbol_scope_pop 1000d150     sf_runtime:sf_runtime.dll
+ 0002:00000154       __imp__sf_debug_check_for_state_inconsistency 1000d154     sf_runtime:sf_runtime.dll
+ 0002:00000158       __imp__sf_get_time         1000d158     sf_runtime:sf_runtime.dll
+ 0002:0000015c       __imp__sf_debug_initialize_chart 1000d15c     sf_runtime:sf_runtime.dll
+ 0002:00000160       __imp__sf_debug_set_chart_disable_implicit_casting 1000d160     sf_runtime:sf_runtime.dll
+ 0002:00000164       __imp__sf_debug_set_chart_event_thresholds 1000d164     sf_runtime:sf_runtime.dll
+ 0002:00000168       __imp__sf_mex_error_direct_call 1000d168     sf_runtime:sf_runtime.dll
+ 0002:0000016c       __imp__sf_debug_symbol_scope_push_eml 1000d16c     sf_runtime:sf_runtime.dll
+ 0002:00000170       __imp__sf_debug_set_chart_data_props 1000d170     sf_runtime:sf_runtime.dll
+ 0002:00000174       __imp__sf_debug_set_chart_state_info 1000d174     sf_runtime:sf_runtime.dll
+ 0002:00000178       __imp__sf_debug_set_chart_substate_count 1000d178     sf_runtime:sf_runtime.dll
+ 0002:0000017c       __imp__sf_debug_set_chart_decomposition 1000d17c     sf_runtime:sf_runtime.dll
+ 0002:00000180       __imp__sf_debug_cv_init_chart 1000d180     sf_runtime:sf_runtime.dll
+ 0002:00000184       __imp__sf_debug_cv_init_state 1000d184     sf_runtime:sf_runtime.dll
+ 0002:00000188       __imp__sf_debug_cv_init_trans 1000d188     sf_runtime:sf_runtime.dll
+ 0002:0000018c       __imp__cv_eml_init_script  1000d18c     sf_runtime:sf_runtime.dll
+ 0002:00000190       __imp__cv_eml_init_fcn     1000d190     sf_runtime:sf_runtime.dll
+ 0002:00000194       __imp__cv_eml_init_if      1000d194     sf_runtime:sf_runtime.dll
+ 0002:00000198       __imp__sf_debug_set_chart_data_compiled_props 1000d198     sf_runtime:sf_runtime.dll
+ 0002:0000019c       __imp__sf_debug_set_instance_data_value_ptr 1000d19c     sf_runtime:sf_runtime.dll
+ 0002:000001a0       __imp__sf_debug_reset_current_state_configuration 1000d1a0     sf_runtime:sf_runtime.dll
+ 0002:000001a4       __imp__sim_mode_is_rtw_gen 1000d1a4     sf_runtime:sf_runtime.dll
+ 0002:000001a8       __imp__sim_mode_is_external 1000d1a8     sf_runtime:sf_runtime.dll
+ 0002:000001ac       __imp__sf_is_chart_inlinable 1000d1ac     sf_runtime:sf_runtime.dll
+ 0002:000001b0       __imp__sf_rtw_info_uint_prop 1000d1b0     sf_runtime:sf_runtime.dll
+ 0002:000001b4       __imp__sf_update_buildInfo 1000d1b4     sf_runtime:sf_runtime.dll
+ 0002:000001b8       __imp__sf_mark_chart_expressionable_inputs 1000d1b8     sf_runtime:sf_runtime.dll
+ 0002:000001bc       __imp__sf_mark_chart_reusable_outputs 1000d1bc     sf_runtime:sf_runtime.dll
+ 0002:000001c0       __imp__sf_set_rtw_dwork_info 1000d1c0     sf_runtime:sf_runtime.dll
+ 0002:000001c4       __imp__sf_mex_import       1000d1c4     sf_runtime:sf_runtime.dll
+ 0002:000001c8       __imp__sf_mex_dup          1000d1c8     sf_runtime:sf_runtime.dll
+ 0002:000001cc       __imp__sf_mex_getcell      1000d1cc     sf_runtime:sf_runtime.dll
+ 0002:000001d0       __imp__sf_mex_decode_encoded_mx_struct_array 1000d1d0     sf_runtime:sf_runtime.dll
+ 0002:000001d4       __imp__sf_mex_setcell      1000d1d4     sf_runtime:sf_runtime.dll
+ 0002:000001d8       __imp__sf_mex_call_matlab  1000d1d8     sf_runtime:sf_runtime.dll
+ 0002:000001dc       __imp__sf_mex_error_message 1000d1dc     sf_runtime:sf_runtime.dll
+ 0002:000001e0       __imp__sf_mex_create       1000d1e0     sf_runtime:sf_runtime.dll
+ 0002:000001e4       __imp__sf_mex_addfield     1000d1e4     sf_runtime:sf_runtime.dll
+ 0002:000001e8       __imp__sf_mex_createcellmatrix 1000d1e8     sf_runtime:sf_runtime.dll
+ 0002:000001ec       __imp__sf_mex_duplicatearraysafe 1000d1ec     sf_runtime:sf_runtime.dll
+ 0002:000001f0       __imp__sf_mex_destroy      1000d1f0     sf_runtime:sf_runtime.dll
+ 0002:000001f4       __imp__sf_mex_createstruct 1000d1f4     sf_runtime:sf_runtime.dll
+ 0002:000001f8       __imp__sf_mex_assign       1000d1f8     sf_runtime:sf_runtime.dll
+ 0002:000001fc       __imp__sf_mex_emlrtNameCapturePostProcessR2012a 1000d1fc     sf_runtime:sf_runtime.dll
+ 0002:00000200       __imp__sf_load_rtw_optimization_info 1000d200     sf_runtime:sf_runtime.dll
+ 0002:00000204       __imp__sf_debug_initialize_machine 1000d204     sf_runtime:sf_runtime.dll
+ 0002:00000208       __imp__sf_debug_set_machine_event_thresholds 1000d208     sf_runtime:sf_runtime.dll
+ 0002:0000020c       __imp__sf_debug_set_machine_data_thresholds 1000d20c     sf_runtime:sf_runtime.dll
+ 0002:00000210       \177sf_runtime_NULL_THUNK_DATA 1000d210     sf_runtime:sf_runtime.dll
+ 0002:00000214       ___xc_a                    1000d214     MSVCRT:cinitexe.obj
+ 0002:00000218       ___xc_z                    1000d218     MSVCRT:cinitexe.obj
+ 0002:0000021c       ___xi_a                    1000d21c     MSVCRT:cinitexe.obj
+ 0002:00000228       ___xi_z                    1000d228     MSVCRT:cinitexe.obj
+ 0002:00000230       __real@41cc900fbb800000    1000d230     CART3_BladeFlap_IPC_sfun.obj
+ 0002:00000238       __real@41ec773dd3a00000    1000d238     CART3_BladeFlap_IPC_sfun.obj
+ 0002:00000240       __real@41e0a0c801e00000    1000d240     CART3_BladeFlap_IPC_sfun.obj
+ 0002:00000248       __real@41dba2ec38000000    1000d248     CART3_BladeFlap_IPC_sfun.obj
+ 0002:00000250       __real@41d187d0c8400000    1000d250     CART3_BladeFlap_IPC_sfun.obj
+ 0002:00000258       __real@41cff744e8000000    1000d258     CART3_BladeFlap_IPC_sfun.obj
+ 0002:00000260       __real@41b7e1066f000000    1000d260     CART3_BladeFlap_IPC_sfun.obj
+ 0002:00000268       __real@41c845d7be800000    1000d268     CART3_BladeFlap_IPC_sfun.obj
+ 0002:00000270       __real@41e973738ec00000    1000d270     CART3_BladeFlap_IPC_sfun.obj
+ 0002:00000278       __real@41b7954144000000    1000d278     CART3_BladeFlap_IPC_sfun.obj
+ 0002:00000280       __real@41e0df1dd9400000    1000d280     CART3_BladeFlap_IPC_sfun.obj
+ 0002:00000288       __real@41de1357fc400000    1000d288     CART3_BladeFlap_IPC_sfun.obj
+ 0002:00000290       __real@0000000000000000    1000d290     CART3_BladeFlap_IPC_sfun.obj
+ 0002:00000298       __real@41b1c3a25d000000    1000d298     CART3_BladeFlap_IPC_sfun.obj
+ 0002:000002a0       __real@41c3aaaa39000000    1000d2a0     CART3_BladeFlap_IPC_sfun.obj
+ 0002:000002a8       __real@41e96b956d800000    1000d2a8     CART3_BladeFlap_IPC_sfun.obj
+ 0002:000002b0       __real@41e18db921400000    1000d2b0     CART3_BladeFlap_IPC_sfun.obj
+ 0002:000002b8       __real@41e234bd2b000000    1000d2b8     c1_CART3_BladeFlap_IPC.obj
+ 0002:000002c0       __real@41edb1c34bc00000    1000d2c0     c1_CART3_BladeFlap_IPC.obj
+ 0002:000002c8       __real@41e300abd3600000    1000d2c8     c1_CART3_BladeFlap_IPC.obj
+ 0002:000002d0       __real@41edca0207800000    1000d2d0     c1_CART3_BladeFlap_IPC.obj
+ 0002:000002d8       __real@4024000000000000    1000d2d8     c1_CART3_BladeFlap_IPC.obj
+ 0002:000002e0       __real@3ff0000000000000    1000d2e0     c1_CART3_BladeFlap_IPC.obj
+ 0002:000002e8       __real@401921fb54442d18    1000d2e8     c1_CART3_BladeFlap_IPC.obj
+ 0002:000002f0       __real@bff921fb54442d18    1000d2f0     c1_CART3_BladeFlap_IPC.obj
+ 0002:000002f8       __real@4000000000000000    1000d2f8     c1_CART3_BladeFlap_IPC.obj
+ 0002:00000300       __real@41e0657948200000    1000d300     c2_CART3_BladeFlap_IPC.obj
+ 0002:00000308       __real@41cdcf4dbf000000    1000d308     c2_CART3_BladeFlap_IPC.obj
+ 0002:00000310       __real@41eef471e7400000    1000d310     c2_CART3_BladeFlap_IPC.obj
+ 0002:00000318       __real@41dfc7365a800000    1000d318     c2_CART3_BladeFlap_IPC.obj
+ 0002:00000320       __real@3fab9ba84fde35d1    1000d320     c2_CART3_BladeFlap_IPC.obj
+ 0002:00000328       _DYNAMIC_DIMENSION_DEF     1000d328     CART3_BladeFlap_IPC_sfun_registry.obj
+ 0002:00000338       __ssBadLevel2InputAccessMsg 1000d338     CART3_BladeFlap_IPC_sfun_registry.obj
+ 0002:000004c0       __ssBadLevel2DirectFeedMsg 1000d4c0     CART3_BladeFlap_IPC_sfun_registry.obj
+ 0002:00000600       __ssBadLevel2DirectFeedSolutionMsg 1000d600     CART3_BladeFlap_IPC_sfun_registry.obj
+ 0002:00000670       __ssBadLevel2ZeroDirectFeedMsg 1000d670     CART3_BladeFlap_IPC_sfun_registry.obj
+ 0002:000007b0       __ssBadLevel2ZeroDirectFeedMsg2 1000d7b0     CART3_BladeFlap_IPC_sfun_registry.obj
+ 0002:00000898       __real@bff0000000000000    1000d898     CART3_BladeFlap_IPC_sfun_registry.obj
+ 0002:000008a0       __real@4153d65940000000    1000d8a0     CART3_BladeFlap_IPC_sfun_registry.obj
+ 0002:000008a8       __pDefaultRawDllMain       1000d8a8     MSVCRT:crtdll.obj
+ 0002:000008a8       __pRawDllMain              1000d8a8     MSVCRT:crtdll.obj
+ 0002:000008b4       ?ProcessDetach@NativeDll@<CrtImplementationDetails>@@0IB 1000d8b4     MSVCRT:tncleanup.obj
+ 0002:000008b8       ?ProcessAttach@NativeDll@<CrtImplementationDetails>@@0IB 1000d8b8     MSVCRT:tncleanup.obj
+ 0002:000008bc       ?ThreadAttach@NativeDll@<CrtImplementationDetails>@@0IB 1000d8bc     MSVCRT:tncleanup.obj
+ 0002:000008c0       ?ThreadDetach@NativeDll@<CrtImplementationDetails>@@0IB 1000d8c0     MSVCRT:tncleanup.obj
+ 0002:000008c4       ?ProcessVerifier@NativeDll@<CrtImplementationDetails>@@0IB 1000d8c4     MSVCRT:tncleanup.obj
+ 0002:000008c8       __load_config_used         1000d8c8     MSVCRT:loadcfg.obj
+ 0002:00000910       ___safe_se_handler_table   1000d910     <linker-defined>
+ 0002:00000914       ___rtc_iaa                 1000d914     MSVCRT:_initsect_.obj
+ 0002:00000918       ___rtc_izz                 1000d918     MSVCRT:_initsect_.obj
+ 0002:0000091c       ___rtc_taa                 1000d91c     MSVCRT:_initsect_.obj
+ 0002:00000920       ___rtc_tzz                 1000d920     MSVCRT:_initsect_.obj
+ 0002:0000098c       __IMPORT_DESCRIPTOR_sf_runtime 1000d98c     sf_runtime:sf_runtime.dll
+ 0002:000009a0       __IMPORT_DESCRIPTOR_libmx  1000d9a0     libmx:libmx.dll
+ 0002:000009b4       __IMPORT_DESCRIPTOR_libmex 1000d9b4     libmex:libmex.dll
+ 0002:000009c8       __IMPORT_DESCRIPTOR_libut  1000d9c8     libut:libut.dll
+ 0002:000009dc       __IMPORT_DESCRIPTOR_MSVCR100 1000d9dc     MSVCRT:MSVCR100.dll
+ 0002:000009f0       __IMPORT_DESCRIPTOR_KERNEL32 1000d9f0     kernel32:KERNEL32.dll
+ 0002:00000a04       __NULL_IMPORT_DESCRIPTOR   1000da04     sf_runtime:sf_runtime.dll
+ 0003:00002080       _DYNAMIC_DIMENSION         10011080     CART3_BladeFlap_IPC_sfun_registry.obj
+ 0003:00002c0c       ___security_cookie         10011c0c     MSVCRT:gs_cookie.obj
+ 0003:00002c10       ___security_cookie_complement 10011c10     MSVCRT:gs_cookie.obj
+ 0003:00002c20       ___native_dllmain_reason   10011c20     MSVCRT:natstart.obj
+ 0003:00002c24       ___native_vcclrit_reason   10011c24     MSVCRT:natstart.obj
+ 0003:00002d20       _sfGlobalDebugInstanceStruct 10011d20     CART3_BladeFlap_IPC_sfun_registry.obj
+ 0003:00003054       ?__type_info_root_node@@3U__type_info_node@@A 10012054     MSVCRT:tncleanup.obj
+ 0003:0000305c       __CART3_BladeFlap_IPCMachineNumber_ 1001205c     <common>
+ 0003:00003060       ___native_startup_state    10012060     <common>
+ 0003:00003064       ___native_startup_lock     10012064     <common>
+ 0003:00003068       ___onexitend               10012068     <common>
+ 0003:0000306c       ___onexitbegin             1001206c     <common>
+ 0003:00003070       ___sse2_available          10012070     <common>
+ 0003:00003074       ___dyn_tls_init_callback   10012074     <common>
+
+ entry point at        0001:0000b33a
+
+ Static symbols
+
+ 0001:00000ab0       _c1_info_helper            10001ab0 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:000017f0       _c1_emlrt_marshallOut      100027f0 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:00001850       _c1_b_emlrt_marshallOut    10002850 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:00001e20       _get_sim_state_c1_CART3_BladeFlap_IPC 10002e20 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:00001f40       _sf_get_sim_state_info_c1_CART3_BladeFlap_IPC 10002f40 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:000020c0       _set_sim_state_c1_CART3_BladeFlap_IPC 100030c0 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:00002180       _c1_update_debugger_state_c1_CART3_BladeFlap_IPC 10003180 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:00002190       _c1_emlrt_marshallIn       10003190 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:000021e0       _c1_b_emlrt_marshallIn     100031e0 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:00002230       _c1_d_emlrt_marshallIn     10003230 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:00002280       _c1_e_emlrt_marshallIn     10003280 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:00002330       _mdlProcessParameters_c1_CART3_BladeFlap_IPC 10003330 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:000023e0       _initialize_params_c1_CART3_BladeFlap_IPC 100033e0 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:000023f0       _mdlSetWorkWidths_c1_CART3_BladeFlap_IPC 100033f0 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:00002790       _sf_get_instance_specialization 10003790 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:000027a0       _mdlStart_c1_CART3_BladeFlap_IPC 100037a0 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:00002940       _init_dsm_address_info     10003940 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:00002950       _chart_debug_initialization 10003950 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:00002e90       _init_script_number_translation 10003e90 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:00002ea0       _c1_sf_marshallOut         10003ea0 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:00002f20       _c1_sf_marshallIn          10003f20 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:00002fa0       _sf_opaque_initialize_c1_CART3_BladeFlap_IPC 10003fa0 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:00002fd0       _initialize_c1_CART3_BladeFlap_IPC 10003fd0 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:00003000       _sf_opaque_enable_c1_CART3_BladeFlap_IPC 10004000 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:00003020       _enable_c1_CART3_BladeFlap_IPC 10004020 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:00003040       _sf_opaque_disable_c1_CART3_BladeFlap_IPC 10004040 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:00003060       _disable_c1_CART3_BladeFlap_IPC 10004060 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:00003080       _sf_opaque_gateway_c1_CART3_BladeFlap_IPC 10004080 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:000030a0       _sf_gateway_c1_CART3_BladeFlap_IPC 100040a0 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:000035b0       _sf_opaque_get_sim_state_c1_CART3_BladeFlap_IPC 100045b0 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:000035d0       _sf_opaque_set_sim_state_c1_CART3_BladeFlap_IPC 100045d0 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:000035f0       _sf_opaque_terminate_c1_CART3_BladeFlap_IPC 100045f0 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:00003680       _finalize_c1_CART3_BladeFlap_IPC 10004680 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:00003690       _sf_opaque_init_subchart_simstructs 10004690 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:000036b0       _initSimStructsc1_CART3_BladeFlap_IPC 100046b0 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:000036c0       _mdlRTW_c1_CART3_BladeFlap_IPC 100046c0 f   c1_CART3_BladeFlap_IPC.obj
+ 0001:00003750       _c2_info_helper            10004750 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:00004490       _c2_emlrt_marshallOut      10005490 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:000044f0       _c2_b_emlrt_marshallOut    100054f0 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:000049d0       _get_sim_state_c2_CART3_BladeFlap_IPC 100059d0 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:00004af0       _sf_get_sim_state_info_c2_CART3_BladeFlap_IPC 10005af0 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:00004c70       _set_sim_state_c2_CART3_BladeFlap_IPC 10005c70 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:00004d30       _c2_update_debugger_state_c2_CART3_BladeFlap_IPC 10005d30 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:00004d40       _c2_emlrt_marshallIn       10005d40 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:00004d90       _c2_b_emlrt_marshallIn     10005d90 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:00004de0       _c2_d_emlrt_marshallIn     10005de0 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:00004e30       _c2_e_emlrt_marshallIn     10005e30 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:00004ee0       _mdlProcessParameters_c2_CART3_BladeFlap_IPC 10005ee0 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:00004f90       _initialize_params_c2_CART3_BladeFlap_IPC 10005f90 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:00004fa0       _mdlSetWorkWidths_c2_CART3_BladeFlap_IPC 10005fa0 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:00005320       _sf_get_instance_specialization 10006320 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:00005330       _mdlStart_c2_CART3_BladeFlap_IPC 10006330 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:000054d0       _init_dsm_address_info     100064d0 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:000054e0       _chart_debug_initialization 100064e0 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:00005930       _init_script_number_translation 10006930 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:00005940       _c2_sf_marshallOut         10006940 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:000059c0       _c2_sf_marshallIn          100069c0 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:00005a40       _sf_opaque_initialize_c2_CART3_BladeFlap_IPC 10006a40 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:00005a70       _initialize_c2_CART3_BladeFlap_IPC 10006a70 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:00005aa0       _sf_opaque_enable_c2_CART3_BladeFlap_IPC 10006aa0 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:00005ac0       _enable_c2_CART3_BladeFlap_IPC 10006ac0 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:00005ae0       _sf_opaque_disable_c2_CART3_BladeFlap_IPC 10006ae0 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:00005b00       _disable_c2_CART3_BladeFlap_IPC 10006b00 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:00005b20       _sf_opaque_gateway_c2_CART3_BladeFlap_IPC 10006b20 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:00005b40       _sf_gateway_c2_CART3_BladeFlap_IPC 10006b40 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:00005fa0       _sf_opaque_get_sim_state_c2_CART3_BladeFlap_IPC 10006fa0 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:00005fc0       _sf_opaque_set_sim_state_c2_CART3_BladeFlap_IPC 10006fc0 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:00005fe0       _sf_opaque_terminate_c2_CART3_BladeFlap_IPC 10006fe0 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:00006070       _finalize_c2_CART3_BladeFlap_IPC 10007070 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:00006080       _sf_opaque_init_subchart_simstructs 10007080 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:000060a0       _initSimStructsc2_CART3_BladeFlap_IPC 100070a0 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:000060b0       _mdlRTW_c2_CART3_BladeFlap_IPC 100070b0 f   c2_CART3_BladeFlap_IPC.obj
+ 0001:000067f0       _getChartInfoFromSimStruct 100077f0 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:000078f0       __ssFatalError             100088f0 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00009c50       _ProcessMexSfunctionCmdLineCall 1000ac50 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00009d70       _sf_debug_api_wrapper      1000ad70 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00009da0       _mdlStart                  1000ada0 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00009dc0       _mdl_start_processing      1000adc0 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00009e30       _mdlTerminate              1000ae30 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00009e50       _mdl_terminate_processing  1000ae50 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00009ec0       _mdlInitializeSampleTimes  1000aec0 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00009ee0       _mdlZeroCrossings          1000aee0 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00009f00       _mdl_zeroCrossings_processing 1000af00 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00009f30       _mdlDerivatives            1000af30 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00009f50       _mdl_derivatives_processing 1000af50 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00009f90       _mdlInitializeConditions   1000af90 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00009fb0       _mdl_initialize_conditions_processing 1000afb0 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:00009ff0       _mdlEnable                 1000aff0 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:0000a010       _mdl_enable_processing     1000b010 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:0000a040       _mdlDisable                1000b040 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:0000a060       _mdl_disable_processing    1000b060 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:0000a090       _mdlOutputs                1000b090 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:0000a0b0       _mdl_outputs_processing    1000b0b0 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:0000a180       _mdl_outputs_continuous_legacy 1000b180 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:0000a250       _mdlGetTimeOfNextVarHit    1000b250 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:0000a290       __ProcessMexSfunctionCmdLineCall 1000b290 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:0000a8b0       _mdlSetWorkWidths          1000b8b0 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:0000a8d0       _mdlProcessParameters      1000b8d0 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:0000a8f0       _mdlInitializeSizes        1000b8f0 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:0000a910       _mdlExtModeExec            1000b910 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:0000a930       _mdl_ext_mode_exec_processing 1000b930 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:0000a970       _mdlRTW                    1000b970 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:0000a9a0       __CreateSimStruct          1000b9a0 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:0000aad0       __RegNumInputPortsCB       1000bad0 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:0000ab30       __RegNumOutputPortsCB      1000bb30 f   CART3_BladeFlap_IPC_sfun_registry.obj
+ 0001:0000afcc       _pre_c_init                1000bfcc f   MSVCRT:crtdll.obj
+ 0001:0000b224       ___DllMainCRTStartup       1000c224 f   MSVCRT:crtdll.obj

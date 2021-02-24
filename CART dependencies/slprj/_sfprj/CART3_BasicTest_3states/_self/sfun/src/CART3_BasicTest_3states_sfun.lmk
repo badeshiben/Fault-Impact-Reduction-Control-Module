@@ -1,0 +1,47 @@
+CC     = "G:\MATLAB_x86\sys\lcc\bin\lcc.exe"
+LD     = "G:\MATLAB_x86\sys\lcc\bin\lcclnk.exe"
+LIBCMD = "G:\MATLAB_x86\sys\lcc\bin\lcclib.exe"
+CFLAGS = -c -Zp8 -DMATLAB_MEX_FILE -noregistrylookup 
+LDFLAGS = -s -dll -L"G:\MATLAB_x86\sys\lcc\lib" 
+LIBFLAGS = 
+
+OBJECTS = \
+	"CART3_BasicTest_3states_sfun.obj"\
+	"c1_CART3_BasicTest_3states.obj"\
+	"c2_CART3_BasicTest_3states.obj"\
+	"c4_CART3_BasicTest_3states.obj"\
+	"c5_CART3_BasicTest_3states.obj"\
+	"CART3_BasicTest_3states_sfun_registry.obj"\
+	"lccstub.obj"\
+	"G:\MATLAB_x86\sys\lcc\mex\lccdef.def"\
+	"G:\MATLAB_x86\extern\lib\win32\lcc\sf_runtime.lib"\
+	"G:\MATLAB_x86\extern\lib\win32\lcc\libmwblas.lib"\
+	"G:\MATLAB_x86\extern\lib\win32\lcc\libmx.lib"\
+	"G:\MATLAB_x86\extern\lib\win32\lcc\libmex.lib"\
+	"G:\MATLAB_x86\extern\lib\win32\lcc\libmat.lib"\
+	"G:\MATLAB_x86\extern\lib\win32\lcc\libfixedpoint.lib"\
+	"G:\MATLAB_x86\extern\lib\win32\lcc\libut.lib"\
+	"G:\MATLAB_x86\extern\lib\win32\lcc\libmwmathutil.lib"\
+	"G:\MATLAB_x86\extern\lib\win32\lcc\libemlrt.lib"\
+	"G:\MATLAB_x86\extern\lib\win32\lcc\libmwsl_log_load_blocks.lib"\
+	"G:\MATLAB_x86\lib\win32\libippmwipt.lib"\
+
+INCLUDE_PATH= -I"G:\MATLAB_x86\sys\lcc\include"  -I"G:\MATLAB_x86\extern\include"  -I"G:\MATLAB_x86\simulink\include"  -I"G:\MATLAB_x86\stateflow\c\mex\include"  -I"G:\MATLAB_x86\rtw\c\src"  -I"C:\Users\Powerlab\Documents\MATLAB\CART3_Advanced_Ctrl\slprj\_sfprj\CART3_BasicTest_3states\_self\sfun\src" 
+ 
+
+CART3_BasicTest_3states_sfun.mexw32 : $(MAKEFILE) $(OBJECTS)
+	$(LD) $(LDFLAGS) -o CART3_BasicTest_3states_sfun.mexw32 @CART3_BasicTest_3states_sfun.lmko
+CART3_BasicTest_3states_sfun.obj :	"CART3_BasicTest_3states_sfun.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "CART3_BasicTest_3states_sfun.c"
+c1_CART3_BasicTest_3states.obj :	"c1_CART3_BasicTest_3states.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c1_CART3_BasicTest_3states.c"
+c2_CART3_BasicTest_3states.obj :	"c2_CART3_BasicTest_3states.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c2_CART3_BasicTest_3states.c"
+c4_CART3_BasicTest_3states.obj :	"c4_CART3_BasicTest_3states.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c4_CART3_BasicTest_3states.c"
+c5_CART3_BasicTest_3states.obj :	"c5_CART3_BasicTest_3states.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c5_CART3_BasicTest_3states.c"
+CART3_BasicTest_3states_sfun_registry.obj :	"CART3_BasicTest_3states_sfun_registry.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "CART3_BasicTest_3states_sfun_registry.c"
+lccstub.obj :	"G:\MATLAB_x86\sys\lcc\mex\lccstub.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "G:\MATLAB_x86\sys\lcc\mex\lccstub.c"

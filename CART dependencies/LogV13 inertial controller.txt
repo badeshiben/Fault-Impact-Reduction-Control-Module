@@ -1,0 +1,19 @@
+06/30/2016
+1. Change the parameters for FBIC and TLIC
+
+User variables
+
+useVar1: Enable inertial response (0-1)
+useVar2: Select inertial response methods (0-1)
+useVar3: Select torque limit inertial control method (0-1)
+useVar4: Start inner-frequency mode (0-1)
+
+useVar6: Frequency signal (Hz)
+useVar7: Deadband(Hz)
+
+Log1: Power increase Delta_P (p.u.)
+Log2: frequency read by the controller (Hz)
+Log3: Inertial activation signal
+Log4: Inertial recovery signal
+Log5: Calculated Generator power (kW)
+ 
