@@ -28,6 +28,7 @@ data.genTemp = 0;
 data.dwHSS   = 0;
 data.dT      = 0;
 % data.ax      = 0;
+data.reset = 0;
 
 
 % initialize ctrl structure
