@@ -34,12 +34,12 @@ data.reset = 0;
 % initialize ctrl structure
 % constants
 ctrl            = struct();
-ctrl.mode       = [0 0 0 0 0 0];  %0 if off, 1 if on. All zeros = normal operation. [WNA WRP WS NS OLNS ES]
+ctrl.mode       = [0 0 0 0 0 0];  %0 if off, 1 if on. All zeros = normal operation. [WNA Wderate WS NS OLNS ES]
 ctrl.modeValue  = 0;  %value of binary ctrl.mode
-ctrl.FTC        = 0;  %TURNS FTC ON/OFF
+ctrl.FIRC       = 0;  %TURNS FIRC ON/OFF
 
 % variables
-ctrl.RP_prev                = 0; %previous timestep WRP
+ctrl.derate_prev            = 0; %previous timestep Wderate
 ctrl.T                      = 1; %torque command [pu]
 ctrl.Tfuture                = 1; %predicted torque when timer hits zero
 ctrl.genTemp.state          = 0; %sensor states, 0=nominal
@@ -52,31 +52,31 @@ ctrl.reduction              = 0; %1 if torque was ever reduced
 
 % initialize faulty structure
 faulty.genTemp.checkFun      = 'genTempWarnFun';
-faulty.genTemp.type          = 'RP';
+faulty.genTemp.type          = 'derate';
 faulty.genTemp.shutdown      = 'NS';
 
 faulty.power.checkFun        = 'powerWarnFun';
-faulty.power.type            = 'RP';
+faulty.power.type            = 'derate';
 faulty.power.shutdown        = 'ES';
 
 % faulty.ax.checkFun           = 'axWarnFun';
-% faulty.ax.type               = 'S';
+% faulty.ax.type               = 'stop';
 % faulty.ax.shutdown           = 'NS';
 
 faulty.freqSensor.checkFun   = 'freqSensorWarnFun';
-faulty.freqSensor.type       = 'S';
+faulty.freqSensor.type       = 'stop';
 faulty.freqSensor.shutdown   = 'NS';
 
 faulty.torqueSensor.checkFun = 'torqueSensorWarnFun';
-faulty.torqueSensor.type     = 'NA';
+faulty.torqueSensor.type     = 'wait';
 faulty.torqueSensor.shutdown = 'NS';
 
 % initialize timer structures
 % timers for modes
-timer.tmax = 10; %WRP default
-timer.TRP  = timer.tmax;
-timer.TS   = 0;
-timer.TNA  = 0;
+timer.tmax = 10; %Wderate default
+timer.derate  = timer.tmax;
+timer.stop   = 0;
+timer.wait  = 0;
 
 % initialize simulink buses (correspond to MATLAB structs)
 bus1        = Simulink.Bus.createObject(timer);

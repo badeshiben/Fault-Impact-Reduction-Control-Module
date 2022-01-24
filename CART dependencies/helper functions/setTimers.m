@@ -10,51 +10,51 @@ if ctrl.mode(6)||ctrl.mode(4) %if faulted
     ctrl.mode(1) = 0;
     ctrl.mode(2) = 0;
     ctrl.mode(3) = 0;
-    timer.TRP = timer.tmax;
-    timer.TNA = 0;
-    timer.TS = 0;
+    timer.derate = timer.tmax;
+    timer.wait = 0;
+    timer.stop = 0;
     if ctrl.mode(6)
         ctrl.mode(4) = 0;
     end
     return 
 end
 
-%Set TS, TNA timers to default if not in warning modes, else increment them
+%Set stop, wait timers to default if not in warning modes, else increment them
 if ctrl.mode(1) == 0
-    timer.TNA = 0;
+    timer.wait = 0;
 else
-    timer.TNA = timer.TNA + dt;
+    timer.wait = timer.wait + dt;
 end
 if ctrl.mode(3) == 0
-    timer.TS = 0;
+    timer.stop = 0;
 else
-    timer.TS = timer.TS + dt;
+    timer.stop = timer.stop + dt;
 end
 
-%WRP logic
+%Derate warning mode logic
 if ctrl.T == 1 %not derated
     ctrl.Tfuture = 1;
     ctrl.step = 0; %reset steps
-    if ctrl.mode(2) == 1 %if in WRP mode
+    if ctrl.mode(2) == 1 %if in derate warning mode
         ctrl.Tfuture = 1/2;
-        timer.TRP = timer.TRP-dt; %decrement timer
-         if timer.TRP <= 0  %if timer hits zero, set to max and derate
-             timer.TRP = timer.tmax;
+        timer.derate = timer.derate-dt; %decrement timer
+         if timer.derate <= 0  %if timer hits zero, set to max and derate
+             timer.derate = timer.tmax;
              ctrl.T = 1/2;
              ctrl.reduction = 1;
          end
     else %if no warning
-        timer.TRP = timer.tmax;
+        timer.derate = timer.tmax;
     end           
 else % if derated
-    timer.TRP = timer.TRP-dt; %decrement timer
-    if ctrl.RP_prev %if warning last step
+    timer.derate = timer.derate-dt; %decrement timer
+    if ctrl.derate_prev %if warning last step
         if ctrl.mode(2) %if still RP warning
             ctrl.Tfuture = ctrl.T - 1/2^(min(ctrl.step + 2, 5));
             disp('-Tfuture=')
             disp(ctrl.Tfuture)
-            if timer.TRP <= 0 %if timer hits zero, set to max and step down torque
-                timer.TRP = timer.tmax;
+            if timer.derate <= 0 %if timer hits zero, set to max and step down torque
+                timer.derate = timer.tmax;
                 if ctrl.T > 1/2 %only increment steps if Torque change occuring
                     ctrl.step = min(ctrl.step + 1, 4);
                 end
@@ -63,14 +63,14 @@ else % if derated
                 ctrl.T = ctrl.T - 1/2^(ctrl.step + 1);
             end
         else %if no warning
-            timer.TRP = timer.tmax;
+            timer.derate = timer.tmax;
             ctrl.Tfuture = ctrl.T + 1/2^(min(ctrl.step + 2, 5));
             disp('+Tfuture=')
             disp(ctrl.Tfuture)
         end
     else %no warning last step
-        if ctrl.mode(2) %if RP warning
-             timer.TRP = timer.tmax;
+        if ctrl.mode(2) %if derate warning
+             timer.derate = timer.tmax;
              ctrl.Tfuture = ctrl.T - 1/2^(min(ctrl.step + 2, 5));
              disp('-Tfuture=')
              disp(ctrl.Tfuture)
@@ -78,8 +78,8 @@ else % if derated
             ctrl.Tfuture = ctrl.T + 1/2^(min(ctrl.step + 2, 5));
             disp('+Tfuture=')
             disp(ctrl.Tfuture)
-            if timer.TRP <= 0  %if timer hits zero, set to max and step up torque
-                timer.TRP = timer.tmax;
+            if timer.derate <= 0  %if timer hits zero, set to max and step up torque
+                timer.derate = timer.tmax;
                 ctrl.step = min(ctrl.step + 1, 4);
                 disp('step')
                 disp(ctrl.step)

@@ -9,16 +9,16 @@ function ctrl = setMode(ctrl, fault, faultName)
     end
     
     switch fault.(faultName).type
-        case 'RP'
+        case 'derate'
             if ctrl.(faultName).state == 1 %if warning
-                ctrl.mode(2) = 1; %WRP mode
+                ctrl.mode(2) = 1; %derate warning mode
             end
-        case 'S'
+        case 'stop'
             if ctrl.(faultName).state == 1 %if warning
-                ctrl.mode(3) = 1; %WS mode
+                ctrl.mode(3) = 1; %stop warning mode
             end
-        case 'NA'
+        case 'wait'
             if ctrl.(faultName).state == 1
-                ctrl.mode(1) = 1; %WNA mode
+                ctrl.mode(1) = 1; %wait warning mode
             end
     end

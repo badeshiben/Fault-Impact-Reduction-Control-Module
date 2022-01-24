@@ -4,7 +4,7 @@ authors:
   - family-names: Anderson
     given-names: Benjamin
     orcid:  https://orcid.org/0000-0003-3619-9042 
-title: "Simulink model of CART wind turbine with Fault Adaptive Control"
+title: "Simulink model of CART wind turbine with Fault Impact Reduction Control Module"
 version: 2.0.4
-doi: 10.5281/zenodo.5604465
+doi: 10.5281/zenodo.5604465 #needs update
 date-released: 2021-10-27
