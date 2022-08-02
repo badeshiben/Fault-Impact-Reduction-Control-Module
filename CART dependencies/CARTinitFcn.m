@@ -37,6 +37,7 @@ ctrl            = struct();
 ctrl.mode       = [0 0 0 0 0 0];  %0 if off, 1 if on. All zeros = normal operation. [WNA Wderate WS NS OLNS ES]
 ctrl.modeValue  = 0;  %value of binary ctrl.mode
 ctrl.FIRC       = 0;  %TURNS FIRC ON/OFF
+ctrl.ramps      = [600/37, inf, inf]; %expected power ramp rates for ES, OLS, NS in kW/s
 
 % variables
 ctrl.derate_prev            = 0; %previous timestep Wderate
@@ -49,6 +50,7 @@ ctrl.torqueSensor.state     = 0;
 % ctrl.ax.state               = 0;
 ctrl.step                   = 0;
 ctrl.reduction              = 0; %1 if torque was ever reduced
+ctrl.rampFuture             = 0; %predicted power ramp rate in kW/s if shutdown occurs
 
 % initialize faulty structure
 faulty.genTemp.checkFun      = 'genTempWarnFun';

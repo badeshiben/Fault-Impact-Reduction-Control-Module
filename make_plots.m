@@ -28,13 +28,13 @@ clc
 % grid on
 % xlim([20,100])
 % ylim([0.5, 1.6])
-% ylabel('rated  power  (pu)')
-% legend('1-s avg. power', 'fault', 'warning')
+% ylabel('Rated  power  (pu)')
+% legend('1 s avg. power', 'fault', 'warning')
 % 
 % subplot(2,2,2)
 % plot(time, mode)
 % grid on
-% legend('mode value')
+% ylabel('Mode value')
 % yticks([0 1 2])
 % xlim([20,100])
 % ylim([-0.2, 2.2])
@@ -47,8 +47,8 @@ clc
 % grid on
 % xlim([20,100])
 % ylim([0.4, 1.4])
-% xlabel('seconds')
-% ylabel('rated  power  (pu)')
+% xlabel('Time (s)')
+% ylabel('Rated  power  (pu)')
 % legend('power', 'power derate', 'power derate predict')
 % 
 % subplot(2,2,4)
@@ -59,14 +59,15 @@ clc
 % plot(time, TNA, 'g-.')
 % xlim([20,100])
 % ylim([-1, 11])
-% xlabel('seconds')
-% ylabel('seconds')
+% xlabel('Time (s)')
+% ylabel('Time (s)')
 % legend('derate countdown', 'stop timer', 'wait timer')
 
 %%%%%%%%%%%%%%%%%%%CASE 2%%%%%%%%%%%%%%%%%%%%%%%%%%
 load('CASE2.mat')
 time = plots.time;
 genPwr = plots.data(:,1);
+genPwr = max(genPwr, 0);
 Pderate = plots.data(:,2);
 Ppredict = plots.data(:,3);
 P1s = plots.data(:,4);
@@ -91,13 +92,13 @@ plot(time, dwWarn,'g-.')
 grid on
 xlim([20,60])
 ylim([-0.01, 0.11])
-ylabel('rated  speed  (pu)')
+ylabel('Rated  speed  (pu)')
 legend('speed diff.', 'fault', 'warning')
 
 subplot(3,2,2)
 plot(time, mode)
 grid on
-legend('mode value')
+ylabel('Mode value')
 xlim([20,60])
 ylim([-0.5, 8.5])
 
@@ -109,7 +110,7 @@ plot(time, dTWarn,'g-.')
 grid on
 xlim([20,60])
 ylim([-0.05, 0.45])
-ylabel('rated   torque   (pu)')
+ylabel('Rated   torque   (pu)')
 legend('torque diff.', 'fault', 'warning')
 
 subplot(3,2,4)
@@ -120,8 +121,8 @@ plot(time, TNA, 'g-.')
 grid on
 xlim([20,60])
 ylim([-2, 22])
-xlabel('seconds')
-ylabel('seconds')
+xlabel('Time (s)')
+ylabel('Time (s)')
 legend('derate countdown', 'stop timer', 'wait timer')
 
 subplot(3,2,5)
@@ -132,9 +133,10 @@ plot(time, Ppredict, 'g-.')
 grid on
 xlim([20,60])
 ylim([-0.1, 1.1])
-xlabel('seconds')
-ylabel('rated  power  (pu)')
+xlabel('Time (s)')
+ylabel('Rated  power  (pu)')
 legend('power', 'power derate', 'power derate predict')
+exportgraphics(figure(2),'fig2.pdf', 'Resolution',300)
 
 %%%%%%%%%%%%%%%%%%%CASE 3%%%%%%%%%%%%%%%%%%%%%%%%%%
 % load('CASE3.mat')
@@ -164,13 +166,13 @@ legend('power', 'power derate', 'power derate predict')
 % grid on
 % xlim([20,115])
 % ylim([0.5, 1.6])
-% ylabel('rated  power  (pu)')
-% legend('1-s avg. power', 'fault', 'warning')
+% ylabel('Rated  power  (pu)')
+% legend('1 s avg. power', 'fault', 'warning')
 % 
 % subplot(3,2,2)
 % plot(time, mode)
 % grid on
-% legend('mode')
+% ylabel('Mode value')
 % xlim([20,115])
 % ylim([-0.2, 2.2])
 % 
@@ -182,7 +184,7 @@ legend('power', 'power derate', 'power derate predict')
 % grid on
 % xlim([20,115])
 % ylim([108, 132])
-% ylabel('\circ C')
+% ylabel('Temperature (\circ C)')
 % legend('generator temp.', 'fault', 'warning')
 % 
 % subplot(3,2,4)
@@ -193,8 +195,8 @@ legend('power', 'power derate', 'power derate predict')
 % grid on
 % xlim([20,115])
 % ylim([-1, 11])
-% xlabel('seconds')
-% ylabel('seconds')
+% xlabel('Time (s)')
+% ylabel('Time (s)')
 % legend('derate countdown', 'stop timer', 'wait timer')
 % 
 % subplot(3,2,5)
@@ -205,6 +207,6 @@ legend('power', 'power derate', 'power derate predict')
 % grid on
 % xlim([20,115])
 % ylim([0.45, 1.35])
-% xlabel('seconds')
-% ylabel('rated  power  (pu)')
+% xlabel('Time (s)')
+% ylabel('Rated  power  (pu)')
 % legend('power', 'power derate', 'power derate predict')
